@@ -71,7 +71,7 @@
                         <figcaption>Sweet spirals topped with creamy glaze.</figcaption>
                     </figure>
                     <p>
-                        Our cinnamon roll are soft, fluffy spirals swirled with sweet cinnamon sugar and topped with a
+                        Our cinnamon rolls are soft, fluffy spirals swirled with sweet cinnamon sugar and topped with a
                         creamy glaze.
                         Perfectly baked to golden brown, they’re a cozy treat any time of day.
                         <i><b>R21.00 each</b></i>
@@ -86,35 +86,33 @@
                 <h2>Place Your Order</h2>
                 <form>
                     <label for="name">Name*</label>
-                    <input type="text" required></input>
+                    <input type="text" id="name" required></input>
                     <br><br>
                     <label for="phone-number">Phone Number*</label>
-                    <input type="tel" required></input>
+                    <input type="tel" id="phone-number" required></input>
                     <br><br>
-                    <label for="scones-order">Scones<label>
-                            <input type="number" min="0"></input>
-                            <br><br>
-                            <label for="chocochip-order">ChocolateChip Cookies<label>
-                                    <input type="number" min="0"></input>
-                                    <br><br>
-                                    <label for="cinnamonrolls-order">Cinnamon Rolls<label>
-                                            <input type="number" min="0"></input>
-                                            <br><br>
-                                            <label for="Requests">Requests</label>
-                                            <textarea id="requests" name="requests" rows="4" cols="40"
-                                                placeholder="Add any special instructions..."></textarea>
-                                            <br><br>
-                                            <label>Add‑Ons</label><br>
-                                            <label for="coffee">Coffee</label>
-                                            <input type="checkbox" id="coffee" name="addons" value="Coffee">
-                                            <br>
-                                            <label for="tea">Tea</label>
-                                            <input type="checkbox" id="tea" name="addons" value="Tea">
-                                            <br>
-
-                                            <br><br>
-                                            <input type="submit" value="Go to Checkout!"></input>
-                                            <br><br>
+                    <label for="scones-order">Scones</label>
+                    <input type="number" min="0" id="scones-order"></input>
+                    <br><br>
+                    <label for="chocochip-order">ChocolateChip Cookies</label>
+                    <input type="number" min="0" id="chocochip-order"></input>
+                    <br><br>
+                    <label for="cinnamonrolls-order">Cinnamon Rolls</label>
+                    <input type="number" min="0" id="cinnamonrolls-order"></input>
+                    <br><br>
+                    <label for="Requests">Requests</label>
+                    <textarea id="requests" name="requests" rows="4" cols="40"
+                        placeholder="Add any special instructions..."></textarea>
+                    <br><br>
+                    <label>Add‑Ons</label><br>
+                    <label for="coffee">Coffee</label>
+                    <input type="checkbox" id="coffee" name="option" value="Coffee">
+                    <br>
+                    <label for="tea">Tea</label>
+                    <input type="checkbox" id="tea" name="option" value="Tea">
+                    <br><br>
+                    <input type="submit" value="Go to Checkout!"></input>
+                    <br><br>
 
                 </form>
             </section>
