@@ -92,3 +92,42 @@ body {
     padding: 20px;
     height: 100%;
 }
+
+.info {
+    position: relative;
+    width: 45%;
+    padding-top: 8vh;
+}
+
+.revonia-img {
+    position: absolute;
+    right: -120%;
+    bottom: 0;
+    width: min(35vw, 400px);
+    max-width: none;
+    z-index: 1;
+}
+
+.revonia-img img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 700px) {
+    #hero {
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .info {
+        width: 100%;
+        padding-top: 4vh;
+    }
+
+    .revonia-img {
+        position: static;
+        width: min(78vw, 360px);
+        margin: 2rem auto 0;
+    }
+}
