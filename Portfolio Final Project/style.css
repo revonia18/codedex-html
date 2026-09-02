@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 @font-face {
     font-family: 'Minecraft';
     src: url('assets/Minecraft.otf') format('opentype');
@@ -48,4 +53,42 @@ body {
     width: 300px;
     height: auto;
 
+}
+
+
+.minecraft-btn {
+    font-family: "Minecraft", sans-serif;
+    font-size: 14px;
+    color: white;
+    background: #7e7e7e;
+    padding: 10px 30px;
+    border: 2px solid;
+    border-color: #aaaaaa #555555 #555555 #aaaaaa;
+    outline: 2px solid black;
+    cursor: pointer;
+    text-shadow: 2px 2px #3f3f3f;
+    transition: filter 0.1s ease;
+}
+
+.minecraft-btn:hover {
+    color: #ffff55;
+    background: #8f8f8f;
+}
+
+.minecraft-btn:active {
+    border-color: #555555 #aaaaaa #aaaaaa #555555;
+    transform: translateY(2px);
+}
+
+#hero {
+    width: 100%;
+    height: 100vh;
+    background: url('images/hero.jpeg') no-repeat center /cover;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    height: 100%;
 }
