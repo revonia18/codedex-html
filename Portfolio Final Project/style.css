@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Minecraft';
+    src: url('assets/Minecraft.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Minecraft';
+    src: url('assets/Minecraft-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Minecraft', sans-serif;
+}
