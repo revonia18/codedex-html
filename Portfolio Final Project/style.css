@@ -102,7 +102,7 @@ body {
 .revonia-img {
     position: absolute;
     right: -120%;
-    bottom: 0;
+    bottom: -40px;
     width: min(35vw, 400px);
     max-width: none;
     z-index: 1;
@@ -130,4 +130,30 @@ body {
         width: min(78vw, 360px);
         margin: 2rem auto 0;
     }
+}
+
+/* About Section */
+#about {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+}
+
+/* Projects Section */
+#projects {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+}
+
+/* Experience Section */
+#experience {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+}
+
+
+
+/* Contact Section */
+#contact {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
 }
