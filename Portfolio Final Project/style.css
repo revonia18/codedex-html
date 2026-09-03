@@ -83,7 +83,9 @@ body {
 #hero {
     width: 100%;
     height: 100vh;
-    background: url('images/hero.jpeg') no-repeat center /cover;
+    background: linear-gradient(rgba(20, 24, 32, 0.28), rgba(20, 24, 32, 0.48)),
+        url('images/hero.jpeg') no-repeat center /cover;
+    background-blend-mode: multiply;
 }
 
 .container {
@@ -113,6 +115,9 @@ body {
     display: block;
     width: 100%;
     height: auto;
+    filter: saturate(0.85) contrast(0.95);
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 86%, transparent 100%);
+    mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 86%, transparent 100%);
 }
 
 @media (max-width: 700px) {
@@ -137,18 +142,49 @@ body {
 #about {
     padding: 50px 20px;
     background-color: #f4f4f4;
+    color: white;
+}
+
+#about {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(35, 42, 48, 0.3), rgba(35, 42, 48, 0.5)),
+        url('images/about.jpeg') no-repeat center /cover;
+    background-blend-mode: multiply;
+
 }
 
 /* Projects Section */
 #projects {
     padding: 50px 20px;
-    background-color: #f4f4f4;
+
+    color: white;
+}
+
+#projects {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(35, 42, 48, 0.25), rgba(35, 42, 48, 0.5)),
+        url('images/projects.jpeg') no-repeat center /cover;
+    background-blend-mode: multiply;
+
 }
 
 /* Experience Section */
 #experience {
     padding: 50px 20px;
     background-color: #f4f4f4;
+    color: white;
+}
+
+#experience {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(35, 42, 48, 0.25), rgba(35, 42, 48, 0.5)),
+        url('images/experience.jpeg') no-repeat center /cover;
+    background-blend-mode: multiply;
+    color: white;
+
 }
 
 
@@ -156,5 +192,31 @@ body {
 /* Contact Section */
 #contact {
     padding: 50px 20px;
-    background-color: #f4f4f4;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: linear-gradient(rgba(35, 42, 48, 0.25), rgba(35, 42, 48, 0.5)),
+        url('images/contact.jpeg') no-repeat center /cover;
+    background-blend-mode: multiply;
+    color: white;
+
+
+
+}
+
+.contact-info {
+    position: absolute;
+    top: 50%;
+    right: 6%;
+    transform: translateY(-50%);
+    text-align: right;
+
+}
+
+@media (max-width: 700px) {
+    .contact-info {
+        position: static;
+        transform: none;
+        text-align: left;
+    }
 }
